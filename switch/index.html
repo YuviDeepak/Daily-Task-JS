@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //month
+        // let year=prompt("Enter The Year : ")
+        // let month=prompt("Enter the month in number :")
+        
+        // switch(month){
+        //     case "1": case "3": case "5": case "7": case "8": case "10": case "12": 
+        //         console.log("There are 31 days.")
+        //         break
+
+        //     case "4": case "6": case "9": case "11": 
+        //         console.log("There are 30 days.")
+        //         break
+
+        //     case "2":
+        //         if((year%4==0 && year%100!=0) || year%400==0){
+        //             console.log("There are 29 days.")
+        //         }
+        //         else{
+        //         console.log("There are 28 days.")
+        //         }
+        //         break
+            
+        //     default :
+        //         console.log("Invalid Input.")
+        //         break
+            
+            
+        // }
+
+        //ATM
+        let name,acc_no
+        let amount=0
+        let isexi=true
+        let acc_no_chk
+        let name_chk
+        
+        while(isexi){
+            let op=prompt("Choose The option :\nCreate An Account\nDeposit\nWidthdraw\nCheck Balance\nExit")
+
+            switch(op){
+                case "1":
+                    name=prompt("Enter Your Name : ")
+                    acc_no=prompt("Enter Your Account-Number : ")
+                    alert("Account Created Successfully !!!")
+                    break
+                
+                case "2":
+                    name_chk=prompt("Enter the Account Holder Name : ")
+                    acc_no_chk=prompt("Enter the Account-Number : ")
+                    if(name==name_chk && acc_no==acc_no_chk){
+                        let dps=prompt("Enter The Amount : ")
+                        amount=Number(amount)+Number(dps)
+                    }
+                    else{
+                        console.log("The Acoount-Number or Account Holder Name is mismatched-1")
+                    }
+                    break
+
+                case "3":
+                    name_chk=prompt("Enter the Account Holder Name : ")
+                    acc_no_chk=prompt("Enter the Account-Number : ")
+                    if(name==name_chk && acc_no==acc_no_chk){
+                        let wid=prompt("Enter The Amount : ")
+                        amount-=wid
+                    }
+                    else{
+                        console.log("The Acoount-Number or Account Holder Name is mismatched-2")
+                    }
+                    break
+
+                case "4":
+                    console.log(name,acc_no,amount)
+                    break
+
+                case "5":
+                    isexi=false
+                    break
+
+                default:
+                    console.log("The Acoount-Number or Account Holder Name is mismatched-3")
+                    break
+
+            }
+        }
+    </script>
+</body>
+</html>
