@@ -71,7 +71,13 @@
                     acc_no_chk=prompt("Enter the Account-Number : ")
                     if(name==name_chk && acc_no==acc_no_chk){
                         let wid=prompt("Enter The Amount : ")
-                        amount-=wid
+                        if(wid>amount){
+                            alert("Insufficent Balance")
+                        }
+                        else{
+                           amount-=wid 
+                        }
+                        
                     }
                     else{
                         console.log("The Acoount-Number or Account Holder Name is mismatched-2")
@@ -79,7 +85,12 @@
                     break
 
                 case "4":
-                    console.log(name,acc_no,amount)
+                    console.log("The Account Details :")
+                    console.log("------------------------------------")
+                    console.log("The Account Holder Name :",name)
+                    console.log("The Account Number :",acc_no)
+                    console.log("Balance Amount :",amount)
+                    console.log("------------------------------------")
                     break
 
                 case "5":
@@ -87,7 +98,7 @@
                     break
 
                 default:
-                    console.log("The Acoount-Number or Account Holder Name is mismatched-3")
+                    console.log("The Invalid Input")
                     break
 
             }
