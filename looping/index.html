@@ -31,19 +31,130 @@
         
 
         //fizz buzz
-        for(let i=1;i<101;i++){
-            if( (i%3==0) && (i%5==0) ) {
-                console.log("FIZZBUZZ")
+        // for(let i=1;i<101;i++){
+        //     if( (i%3==0) && (i%5==0) ) {
+        //         console.log("FIZZBUZZ")
+        //     }
+        //     else if(i%3==0){
+        //         console.log("FIZZ")
+        //     }
+        //     else if(i%5==0){
+        //         console.log("BUZZ")
+        //     }
+        //     else{
+        //         console.log(i)
+        //     }
+        // }
+
+        // 0
+
+        // for (let i = 1; i <= 5; i++) {
+        //     for (let j = 1; j <= 5; j++) {
+
+        //         if ((i==1 || i==5) || (j==1 || j==5)) {
+        //             document.writeln("*&nbsp;")
+        //         }
+                
+        //         else{
+        //             document.writeln("&nbsp;&nbsp;&nbsp;")
+        //         }
+                
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+        //-----------------------------------------
+
+        // 1
+
+        // for(let i=1;i<=5;i++){
+        //     for(let j=1;j<=5;j++){
+        //         if(j==(Math.ceil(5/2))){
+        //             document.writeln("*&nbsp")
+        //         }
+        //         else if(i==2 && j==2){
+        //             document.writeln("*&nbsp")
+        //         }
+        //         else if(i==5){
+        //             document.writeln("*&nbsp")
+        //         }
+        //         else{
+        //             document.writeln("&nbsp&nbsp&nbsp")
+        //         }
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+        // ---------------------------------------
+
+
+        // 4
+
+        // for(let i=1;i<=5;i++){
+        //     for(let j=1;j<=5;j++){
+
+        //         if((j==2 && i==2) || (j==3 || i==3)){
+        //             document.writeln("*&nbsp")
+        //         }
+        //         else{
+        //             document.writeln("&nbsp&nbsp&nbsp")
+        //         }
+                
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+
+        // ------------------------------------------
+
+
+        // 7
+        // for(let i=1;i<=5;i++){
+        //     for(let j=5;j>=1;j--){
+
+        //         if((i==1) || (j==i)){
+        //             document.writeln("*&nbsp")
+        //         }
+        //         else{
+        //             document.writeln("&nbsp&nbsp&nbsp")
+        //         }
+                
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+
+        //----------------
+
+
+
+
+        // 10
+
+        for(let i=1;i<=5;i++){
+            for(let j=1;j<=5;j++){
+                if((j==(Math.ceil(5/2)))||(i==2 && j==2)||(i==5)){
+                    document.writeln("*&nbsp")
+                }
+                else{
+                    document.writeln("&nbsp&nbsp&nbsp")
+                }
             }
-            else if(i%3==0){
-                console.log("FIZZ")
+
+            for (let j = 1; j <= 5; j++) {
+
+                if ((i==1 || i==5) || (j==1 || j==5)) {
+                    document.writeln("*&nbsp;")
+                }
+                
+                else{
+                    document.writeln("&nbsp;&nbsp;&nbsp;")
+                }
+                
             }
-            else if(i%5==0){
-                console.log("BUZZ")
-            }
-            else{
-                console.log(i)
-            }
+
+            
+            document.writeln("<br>")
         }
 
     </script>
