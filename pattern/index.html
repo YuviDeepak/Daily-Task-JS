@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+
 </head>
 
 <body>
@@ -165,12 +165,12 @@
         // 11111
         // for (let i = 1; i <=5; i++) {
         //     for (let j = 1; j <=5; j++) {
-        //         if (j >= i) {
-        //             document.writeln(j,"&nbsp")
-        //         }
-        //         else {
-        //             document.writeln("&nbsp&nbsp&nbsp")
-        //         }
+                // if (j >= i) {
+                //     document.writeln(j,"&nbsp")
+                // }
+                // else {
+                //     document.writeln("&nbsp&nbsp&nbsp")
+                // }
 
         //     }
         //     document.writeln("<br>")
@@ -190,9 +190,49 @@
         //     document.writeln("<br>")
         // }
 
-        
 
-        
+        // --------------------------------------
+
+
+
+        //inverted right triangle
+        // for(let i=1;i<=5;i++){
+        //     for(let j=5;j>=1;j--){
+        //         if(j<=i){
+        //             document.writeln(i,"&nbsp")
+
+        //         }
+        //         else{
+        //             document.writeln("&nbsp&nbsp&nbsp")
+        //         }
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+        //-------------------------------------
+
+
+
+        //pyramid
+
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 5; j >= 1; j--) {
+                if (j <= i) {
+                    document.writeln(i, "&nbsp")
+                }
+                else {
+                    document.writeln("&nbsp&nbsp&nbsp")
+                }
+            }
+
+            for (let k = 2; k <= i; k++) {
+                document.writeln(i, "&nbsp")
+            }
+            document.writeln("<br>")
+        }
+
+
+
 
 
 

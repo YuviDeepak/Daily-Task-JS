@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // 1
+        // let m=1
+        // for(let i=1;i<=5;i++){
+        //     for(let j=1;j<=5;j++){
+        //         document.writeln(m,"&nbsp")
+        //         m++
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+
+        //2
+        // for(let i=1;i<=5;i++){
+        //     for(let j=1;j<=i;j++){
+        //         document.writeln(i,"&nbsp")
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+
+        //3
+        //  for (let i = 1; i <= 5; i++) {
+        //     for (let j = 5; j >= 1; j--) {
+        //         if (j <= i) {
+        //             if ((i % 2 && j % 2) || (i % 2 == 0 && j % 2 == 0)) {
+        //                 document.writeln(i, "&nbsp")
+        //             }
+        //             else {
+        //                 document.writeln("&nbsp&nbsp&nbsp")
+        //             }
+
+        //         }
+        //         else {
+        //             document.writeln("&nbsp&nbsp&nbsp")
+        //         }
+        //     }
+
+        //     for (let k = 2; k <= i; k++) {
+        //         if ((i%2 && k%2) || (i%2 == 0 && k%2 == 0)) {
+        //             document.writeln(i, "&nbsp")
+        //         }
+        //         else {
+        //             document.writeln("&nbsp&nbsp&nbsp")
+        //         }
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+        //5
+        // for(let i=1;i<=5;i++){
+        //     for(let j=1;j<=i;j++){
+        //         document.writeln("*&nbsp")
+        //     }
+        //     document.writeln("<br>")
+        // }
+        // for(let i=2;i<=5;i++){
+        //     for(let j=5;j>=i;j--){
+        //         document.writeln("*&nbsp")
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+        //6
+        // for(let i=1;i<=5;i++){
+        //     for(let j=1;j<=5;j++){
+        //         document.writeln(i*j,"&nbsp")
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+        //7
+        // let m=11
+        // for(let i=1;i<=5;i++){
+        //     for(let j=1;j<=5;j++){
+        //         document.writeln(m,"&nbsp")
+        //         m++
+        //     }
+        //     m+=5
+        //     document.writeln("<br>")m
+        // }
+
+        //8
+        //   for (let i = 1; i <= 5; i++) {
+        //     for (let j = 5; j >= 1; j--) {
+        //         if (j == i || i==5) {
+        //             document.writeln("*&nbsp")
+        //         }
+        //         else {
+        //             document.writeln("&nbsp&nbsp&nbsp")
+        //         }
+        //     }
+
+        //     for (let k = 2; k <= i; k++) {
+        //         if(k==i || i==5)
+        //             document.writeln("*&nbsp")
+        //         else
+        //             document.writeln("&nbsp&nbsp&nbsp")
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+        //9
+        // for(let i=1;i<=5;i++){
+        //     for(let j=1;j<=5;j++){
+        //         if(j<=i)
+        //             document.writeln(i,"&nbsp")
+        //         else{
+        //             document.writeln("*&nbsp")
+        //         }
+
+        //     }
+        // document.writeln("<br>")
+        // }
+        //
+
+        //10
+        // let mid = 3
+        for (let i = 1; i <= 5; i++) {
+
+            for (let j = 1; j <= 5; j++) {
+                if (j == i || (j == 1)) {
+                    document.writeln("*&nbsp")
+                }
+                else {
+                    document.writeln("&nbsp&nbsp&nbsp")
+                }
+            }
+
+            for (let j = 4; j >= 1; j--) {
+                if (j == 1 || j == i) {
+                    document.writeln("*&nbsp")
+                }
+                else {
+                    document.writeln("&nbsp&nbsp&nbsp")
+                }
+            }
+            document.writeln("<br>")
+        }
+
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= 5; j++) {
+                if (j == i) {
+                    document.writeln("*&nbsp")
+                }
+                else {
+                    document.writeln("&nbsp&nbsp&nbsp")
+                }
+            }
+            for (let j = 4; j >= 1; j--) {
+                if (j == i) {
+                    document.writeln("*&nbsp")
+                }
+                else {
+                    document.writeln("&nbsp&nbsp&nbsp")
+                }
+            }
+            document.writeln("<br>")
+        }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
