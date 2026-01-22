@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-        //swap without temp
+        ////swap without temp
         // let a=Number(prompt("Enter a Number :"))
         // let b=Number(prompt("Enter a Number :"))
         // a=a*b
@@ -21,7 +21,49 @@
         // //by + and -
         // console.log(a,b)
 
-        //age calculator
+        ////age calculator
+        // let birth_year=Number(prompt("Enter your birth year :"))
+        // let age=2026-birth_year
+        // console.log(age)
+
+        ////number reverse
+        // let num=Number(prompt("Enter the number to be reversed"))
+        // let dup=num
+        // let sum=0
+        // dup=num
+        // while(dup>0){
+        //     sum=(sum*10)+(dup%10)
+            
+        //     dup=parseInt(dup/10)    
+        // }
+        // console.log(sum)
+
+        ////amstrong number
+        // let num=Number(prompt("Enter a number:"))
+        // let dup=num
+        // let c=0,sum=0
+        // while(dup>0){
+        //     dup=parseInt(dup/10)
+        //     c++
+        // }
+        // dup=num
+        // while(dup>0){
+        //     sum+=((dup%10)**c)
+        //     dup=parseInt(dup/10)    
+        // }
+        // console.log(sum)
+
+        ////fibonaci
+        let fib_end=Number(prompt("Enter a number :"))
+        let previous=0,current=1
+        while(previous<=fib_end){
+            document.writeln(previous)
+            let new_number=previous+current
+            previous=current
+            current=new_number
+        }
+        
+        
         
         
         
