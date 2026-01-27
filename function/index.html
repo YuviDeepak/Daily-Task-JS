@@ -9,87 +9,139 @@
 
 <body>
     <script>
-        //ATM
-        let name, acc_no
-        let amount = 0
-        let isexi = true
+        ////ATM
 
-        function create() {
-            name = prompt("Enter Your Name : ")
-            acc_no = prompt("Enter Your Account-Number : ")
-            alert("Account Created Successfully !!!")
+        // let name, acc_no
+        // let amount = 0
+        // let isexi = true
 
-        }
+        // function create() {
+        //     name = prompt("Enter Your Name : ")
+        //     acc_no = prompt("Enter Your Account-Number : ")
+        //     alert("Account Created Successfully !!!")
 
-        function dis() {
-            console.log("The Account Details :")
-            console.log("------------------------------------")
-            console.log("The Account Holder Name :", name)
-            console.log("The Account Number :", acc_no)
-            console.log("Balance Amount :", amount)
-            console.log("------------------------------------")
-        }
+        // }
 
-        function deposit() {
-            let name_chk = prompt("Enter the Account Holder Name : ")
-            let acc_no_chk = prompt("Enter the Account-Number : ")
-            if (name == name_chk && acc_no == acc_no_chk) {
-                let dps = prompt("Enter The Amount : ")
-                amount = Number(amount) + Number(dps)
-            }
-            else {
-                console.log("The Acoount-Number or Account Holder Name is mismatched-1")
-            }
-        }
+        // function dis() {
+        //     console.log("The Account Details :")
+        //     console.log("------------------------------------")
+        //     console.log("The Account Holder Name :", name)
+        //     console.log("The Account Number :", acc_no)
+        //     console.log("Balance Amount :", amount)
+        //     console.log("------------------------------------")
+        // }
 
-        function wid() {
-            let name_chk = prompt("Enter the Account Holder Name : ")
-            let acc_no_chk = prompt("Enter the Account-Number : ")
-            if (name == name_chk && acc_no == acc_no_chk) {
-                let wid = prompt("Enter The Amount : ")
-                if (wid > amount) {
-                    alert("Insufficent Balance")
+        // function deposit() {
+        //     let name_chk = prompt("Enter the Account Holder Name : ")
+        //     let acc_no_chk = prompt("Enter the Account-Number : ")
+        //     if (name == name_chk && acc_no == acc_no_chk) {
+        //         let dps = prompt("Enter The Amount : ")
+        //         amount = Number(amount) + Number(dps)
+        //     }
+        //     else {
+        //         console.log("The Acoount-Number or Account Holder Name is mismatched-1")
+        //     }
+        // }
+
+        // function wid() {
+        //     let name_chk = prompt("Enter the Account Holder Name : ")
+        //     let acc_no_chk = prompt("Enter the Account-Number : ")
+        //     if (name == name_chk && acc_no == acc_no_chk) {
+        //         let wid = prompt("Enter The Amount : ")
+        //         if (wid > amount) {
+        //             alert("Insufficent Balance")
+        //         }
+        //         else {
+        //             amount -= wid
+        //         }
+
+        //     }
+        //     else {
+        //         console.log("The Acoount-Number or Account Holder Name is mismatched-2")
+        //     }
+        // }
+
+        // while (isexi) {
+        //     let op = prompt("Choose The option :\nCreate An Account\nDeposit\nWidthdraw\nCheck Balance\nExit")
+
+        //     switch (op) {
+        //         case "1":
+        //             create()
+        //             break
+
+        //         case "2":
+        //             deposit()
+        //             break
+
+        //         case "3":
+        //             wid()
+        //             break
+
+        //         case "4":
+        //             dis()
+        //             break
+
+        //         case "5":
+        //             isexi = false
+        //             break
+
+        //         default:
+        //             console.log("The Invalid Input")
+        //             break
+
+        //     }
+        // }
+
+
+        ////function task
+
+        let fun1 = () => {
+            for (let i = 5; i >= 1; i--) {
+                for (let j = 1; j <= i; j++) {
+                    document.writeln("s")
                 }
-                else {
-                    amount -= wid
+                document.writeln("<br>")
+            }
+        }
+
+        let fun2 = () => {
+            for (let i = 1; i <=5 ; i++) {
+                for (let j = 5; j >= i; j--) {
+                    document.writeln(j)
                 }
-
+                document.writeln("<br>")
             }
-            else {
-                console.log("The Acoount-Number or Account Holder Name is mismatched-2")
+        }
+        
+        let fun3=()=>{
+            for(let i=1;i<=5;i++){
+                for(let j=1;j<=5;j++){
+                    if(j<i){
+                        document.writeln("&nbsp&nbsp")
+                    }
+                    else{
+                        document.writeln(j)
+                    }
+                }
+                document.writeln("<br>")
             }
         }
 
-        while (isexi) {
-            let op = prompt("Choose The option :\nCreate An Account\nDeposit\nWidthdraw\nCheck Balance\nExit")
-
-            switch (op) {
-                case "1":
-                    create()
-                    break
-
-                case "2":
-                    deposit()
-                    break
-
-                case "3":
-                    wid()
-                    break
-
-                case "4":
-                    dis()
-                    break
-
-                case "5":
-                    isexi = false
-                    break
-
-                default:
-                    console.log("The Invalid Input")
-                    break
-
-            }
+        let option = prompt("Select any one option : 1 , 2 , 3")
+        switch (option) {
+            case "1":
+                fun1()
+                break
+            case "2":
+                fun2()
+                break
+            case "3":
+                fun3()
+                break
+            default:
+                console.log("Invalid input")
         }
+
     </script>
 </body>
 
