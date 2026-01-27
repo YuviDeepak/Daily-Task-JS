@@ -95,52 +95,72 @@
 
         ////function task
 
-        let fun1 = () => {
-            for (let i = 5; i >= 1; i--) {
-                for (let j = 1; j <= i; j++) {
-                    document.writeln("s")
-                }
-                document.writeln("<br>")
-            }
-        }
+        // let fun1 = () => {
+        //     for (let i = 5; i >= 1; i--) {
+        //         for (let j = 1; j <= i; j++) {
+        //             document.writeln("s")
+        //         }
+        //         document.writeln("<br>")
+        //     }
+        // }
 
-        let fun2 = () => {
-            for (let i = 1; i <=5 ; i++) {
-                for (let j = 5; j >= i; j--) {
-                    document.writeln(j)
-                }
-                document.writeln("<br>")
-            }
-        }
-        
-        let fun3=()=>{
-            for(let i=1;i<=5;i++){
-                for(let j=1;j<=5;j++){
-                    if(j<i){
-                        document.writeln("&nbsp&nbsp")
-                    }
-                    else{
-                        document.writeln(j)
-                    }
-                }
-                document.writeln("<br>")
-            }
-        }
+        // let fun2 = () => {
+        //     for (let i = 1; i <=5 ; i++) {
+        //         for (let j = 5; j >= i; j--) {
+        //             document.writeln(j)
+        //         }
+        //         document.writeln("<br>")
+        //     }
+        // }
 
-        let option = prompt("Select any one option : 1 , 2 , 3")
-        switch (option) {
-            case "1":
-                fun1()
-                break
-            case "2":
-                fun2()
-                break
-            case "3":
-                fun3()
-                break
-            default:
-                console.log("Invalid input")
-        }
+        // let fun3=()=>{
+        //     for(let i=1;i<=5;i++){
+        //         for(let j=1;j<=5;j++){
+        //             if(j<i){
+        //                 document.writeln("&nbsp&nbsp")
+        //             }
+        //             else{
+        //                 document.writeln(j)
+        //             }
+        //         }
+        //         document.writeln("<br>")
+        //     }
+        // }
+
+        // let option = prompt("Select any one option : 1 , 2 , 3")
+        // switch (option) {
+        //     case "1":
+        //         fun1()
+        //         break
+        //     case "2":
+        //         fun2()
+        //         break
+        //     case "3":
+        //         fun3()
+        //         break
+        //     default:
+        //         console.log("Invalid input")
+        // }
+
+        //// task 2
+        let total = (array) => {
+            let tot = 0;
+            for (let i = 0; i < array.length; i++) {
+                tot += Number(array[i]);
+            }
+            console.log("Total:", tot);
+        };
+
+        let input = prompt("Enter a list of numbers separated by commas:");
+        let array = input.split(",");
+
+        total(array);
+
+
+
+
+
+
 
     </script>
 </body>
