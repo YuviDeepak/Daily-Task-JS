@@ -1,0 +1,28 @@
+// let bgchange= ()=>{
+//     let clr1=document.getElementById("bg1")
+//     let clr2=document.getElementById("bg2")
+//     let bbbg=document.getElementById("bdy")
+//     bbbg.style.backgroundImage = `linear-gradient(to right ,${clr1.value}, ${clr2.value})`;
+// }
+
+let count = 0
+let add_to_cart = document.getElementById("Addtocart")
+
+let incre = ()=>{
+    if(count<10){
+        count++
+        add_to_cart.innerText=count
+    }
+}
+
+let decre = ()=>{
+    if(count>0){
+        count--
+        add_to_cart.innerText=count
+    }
+}
+
+let re = ()=>{
+    count=0
+    add_to_cart.innerText=count
+}
