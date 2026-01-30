@@ -1,9 +1,11 @@
-// let bgchange= ()=>{
-//     let clr1=document.getElementById("bg1")
-//     let clr2=document.getElementById("bg2")
-//     let bbbg=document.getElementById("bdy")
-//     bbbg.style.backgroundImage = `linear-gradient(to right ,${clr1.value}, ${clr2.value})`;
-// }
+let bgchange= ()=>{
+
+    let clr1=document.getElementById("bg1")
+    let clr2=document.getElementById("bg2")
+    let tv=document.getElementById("tovalue")
+    let bbbg=document.getElementById("bdy")
+    bbbg.style.backgroundImage = `linear-gradient(to ${tv.value} ,${clr1.value}, ${clr2.value})`;
+}
 
 let count = 0
 let add_to_cart = document.getElementById("Addtocart")
